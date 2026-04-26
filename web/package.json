@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "build:sdk": "node scripts/build-sdk.mjs",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "build:sdk": "node init && node scripts/build-sdk.mjs",
+    "start": "node init && next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit"
   },
